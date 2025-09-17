@@ -1,4 +1,4 @@
-namespace TowerDefenseAdventureLegends
+namespace TowerDefenseAdventureLegends.Assets.Scripts.Enum
 {
     public enum CharaterColor
     {
