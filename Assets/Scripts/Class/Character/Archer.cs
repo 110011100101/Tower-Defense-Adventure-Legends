@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
+using TowerDefenseAdventureLegends.Assets.Scripts.Interface;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Archer : MonoBehaviour
 {
+
     void Start()
     {
         
