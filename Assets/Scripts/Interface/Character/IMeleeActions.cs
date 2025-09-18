@@ -1,7 +1,8 @@
 namespace TowerDefenseAdventureLegends.Assets.Scripts.Interface
 {
-    public interface IRanged : ICharacter
+    public interface IMeleeActions
     {
-        public void Shoot();
+        public void Attack();
     }
+
 }

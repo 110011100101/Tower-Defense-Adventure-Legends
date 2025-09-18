@@ -1,8 +1,8 @@
 namespace TowerDefenseAdventureLegends.Assets.Scripts.Interface
 {
-    public interface ICharacter : ICharacterManger
+    public interface IMonkActions : IRangedActions
     {
-        public void Run();
+        public void Heal();
     }
 }
 

@@ -1,6 +1,6 @@
 namespace TowerDefenseAdventureLegends.Assets.Scripts.Interface
 {
-    public interface ILancer : IMelee, ILancerManager
+    public interface ILancerActions : IMeleeActions
     {
         public void Defence();
     }

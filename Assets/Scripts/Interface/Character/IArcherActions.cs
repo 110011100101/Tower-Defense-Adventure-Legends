@@ -1,6 +1,6 @@
 namespace TowerDefenseAdventureLegends.Assets.Scripts.Interface
 {
-    public interface IArcher : IRanged
+    public interface IArcherActions : IRangedActions
     {
         public void Defence();
     }

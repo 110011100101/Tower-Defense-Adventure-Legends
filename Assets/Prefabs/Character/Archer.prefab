@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5359053415014252409}
   - component: {fileID: 7390972833191826076}
   - component: {fileID: 7875961146513695146}
+  - component: {fileID: 8314694027078480927}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -106,3 +107,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8314694027078480927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558246350235415435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6825d4f701826bb4d91ba3eb27006809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

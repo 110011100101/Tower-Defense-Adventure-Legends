@@ -1,8 +1,8 @@
 namespace TowerDefenseAdventureLegends.Assets.Scripts.Interface
 {
-    public interface IMonk : IRanged
+    public interface IWarriorActions : IMeleeActions
     {
-        public void Heal();
+        public void Guard();
     }
 }
 

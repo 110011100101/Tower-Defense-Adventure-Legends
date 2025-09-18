@@ -1,16 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TowerDefenseAdventureLegends.Assets.Scripts.Interface;
 using UnityEngine;
 
-public class Warrior : MonoBehaviour
+public class Warrior : Character, IWarriorActions
 {
-    // Start is called before the first frame update
+    public void Attack()
+    {
+
+    }
+
+    public void Guard()
+    {
+
+    }
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

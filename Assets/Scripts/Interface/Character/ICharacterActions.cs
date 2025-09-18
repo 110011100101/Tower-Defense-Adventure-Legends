@@ -1,8 +1,9 @@
 namespace TowerDefenseAdventureLegends.Assets.Scripts.Interface
 {
-    public interface IMelee : ICharacter
+    public interface ICharacterActions
     {
-        public void Attack();
+        public void Run();
     }
-
 }
+
+
