@@ -1,6 +1,6 @@
 namespace TowerDefenseAdventureLegends.Assets.Scripts.Enum
 {
-    public enum CharacterColor
+    public enum CharacterColorType
     {
         Black,
         Blue,

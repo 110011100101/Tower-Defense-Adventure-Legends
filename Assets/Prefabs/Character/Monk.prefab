@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7920271238495918632}
   - component: {fileID: 7895972926957426548}
   - component: {fileID: 2701872177613380220}
+  - component: {fileID: -2488859613009321227}
   m_Layer: 0
   m_Name: Monk
   m_TagString: Untagged
@@ -106,3 +107,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2488859613009321227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8438979525870427355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ae07e664513974c8a9c6229c5d866f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  BaseMaxHP: 0
+  BaseMaxMP: 0
+  BaseAttack: 0
+  BaseDefense: 0
+  BaseAttackSpeed: 0
+  BaseAttackRange: 0
+  BaseMoveSpeed: 0

@@ -65,6 +65,7 @@
     <Compile Include="Assets\XLua\Examples\04_LuaObjectOrented\InvokeLua.cs" />
     <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest.cs" />
     <Compile Include="Assets\XLua\Src\TemplateEngine\TemplateEngine.cs" />
+    <Compile Include="Assets\Scripts\Class\Managers\LuaManager.cs" />
     <Compile Include="Assets\Scripts\Interface\Character\ICharacterActions.cs" />
     <Compile Include="Assets\Scripts\Interface\Character\IArcherActions.cs" />
     <Compile Include="Assets\Scripts\Class\Character\Lancer.cs" />
@@ -83,8 +84,8 @@
     <Compile Include="Assets\XLua\Src\LuaDLL.cs" />
     <Compile Include="Assets\XLua\Src\LuaException.cs" />
     <Compile Include="Assets\Scripts\Interface\Managers\ILancerManager.cs" />
-    <Compile Include="Assets\Scripts\Enum\CharacterColor.cs" />
     <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\Loader\CustomLoader.cs" />
+    <Compile Include="Assets\Scripts\Class\Managers\ButtonManager.cs" />
     <Compile Include="Assets\XLua\Examples\14_HotfixAsyncAwait\HotfixAsyncAwaitTest.cs" />
     <Compile Include="Assets\XLua\Examples\11_RawObject\RawObjectTest.cs" />
     <Compile Include="Assets\XLua\Src\SignatureLoader.cs" />
@@ -93,9 +94,12 @@
     <Compile Include="Assets\Scripts\Interface\Character\IRangedActions.cs" />
     <Compile Include="Assets\Scripts\Interface\Character\IMeleeActions.cs" />
     <Compile Include="Assets\XLua\Src\GenAttributes.cs" />
+    <Compile Include="Assets\Scripts\Enum\CharacterType.cs" />
+    <Compile Include="Assets\Scripts\Class\Managers\SceneLoaderManager.cs" />
     <Compile Include="Assets\XLua\Src\MethodWarpsCache.cs" />
     <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Interface\Managers\ICharacterManager.cs" />
+    <Compile Include="Assets\Scripts\Enum\CharacterColorType.cs" />
     <Compile Include="Assets\XLua\Src\RawObject.cs" />
     <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
     <Compile Include="Assets\Scripts\Interface\Character\ILancerActions.cs" />
@@ -105,9 +109,9 @@
     <Compile Include="Assets\XLua\Src\LuaTable.cs" />
     <Compile Include="Assets\Scripts\Class\Character\Monk.cs" />
     <Compile Include="Assets\XLua\Src\Utils.cs" />
+    <Compile Include="Assets\Scripts\Enum\OrientationType.cs" />
     <Compile Include="Assets\XLua\Src\StaticLuaCallbacks.cs" />
     <Compile Include="Assets\XLua\Examples\09_GenericMethod\GenericMethodExample.cs" />
-    <Compile Include="Assets\Scripts\Enum\Orientation.cs" />
     <Compile Include="Assets\XLua\Examples\12_ReImplementInLua\ReImplementInLua.cs" />
     <Compile Include="Assets\XLua\Src\LuaBase.cs" />
     <Compile Include="Assets\XLua\Src\InternalGlobals.cs" />

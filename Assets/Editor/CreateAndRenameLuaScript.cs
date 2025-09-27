@@ -8,7 +8,7 @@ using System.IO;
 public class CreateAndRenameLuaScript : MonoBehaviour
 {
     // 默认文件名
-    private static readonly string FILE_NAME = "Confiig.lua";
+    private static readonly string FILE_NAME = "Config.lua.txt";
     // 脚本默认内容
     private static readonly string DEFAULT_CONTENT = "";
 
@@ -20,7 +20,7 @@ public class CreateAndRenameLuaScript : MonoBehaviour
 
         if (path == "")
         {
-            path = "Assets";
+            path = "Assets/Resources/Configs";
         }
         // 如果选中的对象不是文件夹，则在其所在目录下创建Lua脚本
         else if (!AssetDatabase.IsValidFolder(path))

@@ -1,25 +1,21 @@
+using TowerDefenseAdventureLegends.Assets.Scripts.Enum;
 using TowerDefenseAdventureLegends.Assets.Scripts.Interface;
 using UnityEngine;
 
 public class Archer : Character, IArcherActions
 {
-    public void Defence()
+    public override CharacterType Type { get; set; } = CharacterType.Archer;
+    public void SwitchDefenceState()
     {
-        GetComponent<Animator>().SetBool("isDefence", true);
+        bool isDefence = GetComponent<Animator>().GetBool($"{nameof(isDefence)}");
+
+        GetComponent<Animator>().SetBool($"{nameof(isDefence)}", !isDefence);
     }
 
-    public void Shoot()
+    public void SwitchShootState()
     {
-        GetComponent<Animator>().SetBool("isShoot", true);
-    }
+        bool isShoot = GetComponent<Animator>().GetBool($"{nameof(isShoot)}");
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
+        GetComponent<Animator>().SetBool($"{nameof(isShoot)}", !isShoot);
     }
 }

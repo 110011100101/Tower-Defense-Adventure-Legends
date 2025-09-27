@@ -2,7 +2,7 @@ namespace TowerDefenseAdventureLegends.Assets.Scripts.Interface
 {
     public interface IArcherActions : IRangedActions
     {
-        public void Defence();
+        public void SwitchDefenceState();
     }
 }
 

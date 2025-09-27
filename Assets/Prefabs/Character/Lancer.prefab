@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5786006657980014368}
   - component: {fileID: 5474154377350669933}
   - component: {fileID: 702559350819282914}
+  - component: {fileID: -3099247216836456639}
   m_Layer: 0
   m_Name: Lancer
   m_TagString: Untagged
@@ -106,3 +107,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3099247216836456639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4076623366067686343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6d59c180998c949824fcdb163045f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  BaseMaxHP: 0
+  BaseMaxMP: 0
+  BaseAttack: 0
+  BaseDefense: 0
+  BaseAttackSpeed: 0
+  BaseAttackRange: 0
+  BaseMoveSpeed: 0
+  Orientantion: 0

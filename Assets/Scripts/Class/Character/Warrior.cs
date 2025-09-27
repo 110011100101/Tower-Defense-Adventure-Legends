@@ -1,27 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+using TowerDefenseAdventureLegends.Assets.Scripts.Enum;
 using TowerDefenseAdventureLegends.Assets.Scripts.Interface;
 using UnityEngine;
 
 public class Warrior : Character, IWarriorActions
 {
-    public void Attack()
-    {
+    public override CharacterType Type { get; set; } = CharacterType.Warrior;
 
+    public void SwitchAttackState()
+    {
+        bool isAttack = GetComponent<Animator>().GetBool($"{nameof(isAttack)}");
+
+        GetComponent<Animator>().SetBool($"{nameof(isAttack)}", !isAttack);
     }
 
-    public void Guard()
+    public void SwitchGuardState()
     {
+        bool isGuard = GetComponent<Animator>().GetBool($"{nameof(isGuard)}");
 
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
+        GetComponent<Animator>().SetBool($"{nameof(isGuard)}", !isGuard);
     }
 }
