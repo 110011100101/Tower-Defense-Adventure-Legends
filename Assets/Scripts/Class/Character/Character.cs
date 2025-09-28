@@ -64,7 +64,7 @@ public class Character : MonoBehaviour, ICharacterActions, ICharacterManger
         luaEnv.DoString("require 'CharacterConfig'");
         LuaFunction getCharacterConfigFunction = luaEnv.Global.Get<LuaFunction>("GetCharacterConfig");
 
-        var config = getCharacterConfigFunction.Call((int)characterType)[0] as LuaTable;
+        LuaTable config = getCharacterConfigFunction.Call((int)characterType)[0] as LuaTable;
 
         if (config != null)
         {

@@ -5,12 +5,6 @@ using UnityEngine;
 public class Archer : Character, IArcherActions
 {
     public override CharacterType Type { get; set; } = CharacterType.Archer;
-    public void SwitchDefenceState()
-    {
-        bool isDefence = GetComponent<Animator>().GetBool($"{nameof(isDefence)}");
-
-        GetComponent<Animator>().SetBool($"{nameof(isDefence)}", !isDefence);
-    }
 
     public void SwitchShootState()
     {

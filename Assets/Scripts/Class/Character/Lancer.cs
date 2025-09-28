@@ -14,7 +14,7 @@ public class Lancer : Character, ILancerActions, ILancerManager
         GetComponent<Animator>().SetBool($"{nameof(isAttack)}", !isAttack);
     }
 
-    public void Defence()
+    public void SwitchDefenceState()
     {
         bool isDefence = GetComponent<Animator>().GetBool($"{nameof(isDefence)}");
 
