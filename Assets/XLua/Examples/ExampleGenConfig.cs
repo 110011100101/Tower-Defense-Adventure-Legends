@@ -6,12 +6,12 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
 
-using System.Collections.Generic;
 using System;
-using UnityEngine;
-using XLua;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using UnityEngine;
+using XLua;
 
 //配置的详细介绍请看Doc下《XLua的配置.doc》
 public static class ExampleGenConfig
@@ -96,7 +96,7 @@ public static class ExampleGenConfig
                 new List<string>(){"System.IO.DirectoryInfo", "Create", "System.Security.AccessControl.DirectorySecurity"},
                 new List<string>(){"UnityEngine.MonoBehaviour", "runInEditMode"},
             };
-    
+
     public static List<Type> BlackGenericTypeList = new List<Type>()
     {
         typeof(Span<>),
@@ -109,7 +109,8 @@ public static class ExampleGenConfig
         return BlackGenericTypeList.Contains(type.GetGenericTypeDefinition());
     }
 
-    [BlackList] public static Func<MemberInfo, bool> GenericTypeFilter = (memberInfo) =>
+    [BlackList]
+    public static Func<MemberInfo, bool> GenericTypeFilter = (memberInfo) =>
     {
         switch (memberInfo)
         {

@@ -8,12 +8,30 @@ namespace TowerDefenseAdventureLegends.Assets.Scripts.Class.Managers
     {
         private LuaEnv luaEnv;
 
-        public LuaEnv Initialized()
+        public LuaManager()
+        {
+            Initialized();
+        }
+
+        private void Initialized()
         {
             luaEnv = new LuaEnv();
             luaEnv.AddLoader(CustomLoader);
+        }
 
-            return luaEnv;
+        public void LoadConfigScript(string scriptName)
+        {
+            luaEnv.DoString($"require '{scriptName}'");
+        }
+
+        public LuaFunction GetFunction(string functionName)
+        {
+            return luaEnv.Global.Get<LuaFunction>($"{functionName}");
+        }
+
+        public void Destroy()
+        {
+            luaEnv.Dispose();
         }
 
         /// <summary>
